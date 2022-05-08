@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44f8d669-0047-4ac7-81a6-1aa74ce5b9df" name="Changes" comment="" />
+    <list default="true" id="44f8d669-0047-4ac7-81a6-1aa74ce5b9df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/thNhungJavaScript.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -46,11 +48,22 @@
       <option name="presentableId" value="Default" />
       <updated>1651822202756</updated>
       <workItem from="1651822203907" duration="3874000" />
-      <workItem from="1652019255329" duration="4721000" />
+      <workItem from="1652019255329" duration="5030000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
