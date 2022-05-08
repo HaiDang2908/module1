@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="showAlert()">bam vao day</button>
+<button type="button" onclick="showConsole()">bam vao day</button>
+<button type="button" onclick="showConfirm()">bam vao day</button>
+<button type="button" onclick="showDocumentWite()">bam vao day</button>
+<p id="showCu"></p>
+<button type="button" onclick="showDocu()"></button>
+<script>
+    function showAlert() {
+        alert("xin chao")
+    }
+    function showConfirm() {
+        confirm("ok  nhe")
+    }
+    function showConsole() {
+        console.log("hai dang")
+    }
+    function showDocumentWite() {
+        document.write("alo khoe khong")
+
+    }
+    function showDocu() {
+        document.getElementById("showCu").innerHTML=" <h1>ok the nhe</h1> "
+
+
+    }
+
+</script>
+</body>
+</html>
