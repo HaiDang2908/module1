@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+    <h1>Caculator</h1>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="number" id="input1"></td>
+            <td colspan="2"><input type="number" id="input2" ></td>
+
+        </tr>
+        <tr>
+            <td><button onclick="auditon()">Audition(+)</button></td>
+            <td><button onclick="subtraction()">Subtraction(-)</button></td>
+            <td><button onclick="mutip()">Mutip(*)</button></td>
+            <td><button onclick="division()">Division(/)</button></td>
+        </tr>
+    </table>
+
+    <b id="result"></b>
+
+<script>
+
+    function auditon() {
+        let input1 = +document.getElementById('input1').value
+        let input2 = +document.getElementById('input2').value
+        let result = input1+input2
+        // console.log(result)
+     document.getElementById('result').innerHTML = "Result Auditon = " + result
+     }
+    function subtraction() {
+        let input1 = +document.getElementById('input1').value
+        let input2 = +document.getElementById('input2').value
+        let result = input1-input2
+        console.log(result)
+        document.getElementById('result').innerHTML = "Result Subtraction = " + result
+    }
+    function mutip() {
+        let input1 = document.getElementById("input1").value
+        let input2 = document.getElementById("input2").value
+        let result = input1 * input2
+        document.getElementById("result").innerHTML ="Result Mutip =" + result
+
+
+    } function division() {
+        let input1 = document.getElementById("input1").value
+        let input2 = document.getElementById("input2").value
+        let result = input1 / input2
+        document.getElementById("result").innerHTML ="Result division =" + result
+
+
+    }
+</script>
+</body>
+</html>
