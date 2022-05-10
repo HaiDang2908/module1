@@ -13,7 +13,7 @@
         <td><h2>To Currency</h2></td>
     </tr>
       <tr>
-          <td><input type="text" value="1"></td>
+          <td><input type="number" id="input"></td>
           <td>
               <select>
                   <option value="VietNam">VietNam</option>
@@ -27,13 +27,25 @@
               </select>
           </td>
           <td>
-              <input style="background-color: blueviolet" type="text" value="Convert">
+              <button style="background-color: blueviolet;color: aliceblue" onclick="Convert()">Convert</button>
           </td>
-
-
       </tr>
   </table>
+<b id="result"></b>
 </form>
+<script>
+    function doiTien() {
+        let input = document.getElementById("input").value
+
+
+
+
+
+
+
+
+    }
+</script>
 
 </body>
 </html>
