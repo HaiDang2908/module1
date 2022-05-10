@@ -5,19 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-<tr>
-    <d><input type="number" id="input1">a</d>
-    <d><input type="number" id="input2">b</d>
-    <button onclick="">Click</button>
-</tr>
+
+
+
+ <div><input type="number" id="input1">a</div>
+    <div><input type="number" id="input2">b</div>
+    <button onclick="dienTich()">Click</button>
+
 <p id="result"></p>
-<script>
+
+
+    <script>
     function dienTich() {
-        let input1 = document.getElementById("input1").value
-        let input2 = document.getElementById("input2").value
-        let result = input1*input2
-        document.getElementById("result").innerHTML = ("diện tích là:" + resut)
-    }
+        let input1 = parseFloat(document.getElementById("input1").value)
+        let input2 = parseFloat(document.getElementById("input2").value)
+
+        let dt = input1*input2
+        let cv = (input1 +input2)*2
+       document.getElementById("result").innerHTML = "diện tích là:" + dt +" , chu vi la :" +cv
+        }
+
+
+
+
+
+
 </script>
 
 
