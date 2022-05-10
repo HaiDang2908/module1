@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><input type="number" id="input"></div>
+<button onclick="hinhvuong()">Click</button>
+<p id="result"></p>
+
+<script>
+    function hinhvuong() {
+        let input = document.getElementById("input").value
+        let P = input*4
+        let S = Math.pow(input,2)
+        document.getElementById("result").innerHTML = "chu vi hình vuông là :" +P + "diện tích hình vuông là :" +S
+
+
+
+
+    }
+
+</script>
+</body>
+</html>
