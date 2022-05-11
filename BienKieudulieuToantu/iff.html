@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="soA">
+<button onclick="tinhToan()">Click</button>
+<p id="result"></p>
+<script>
+    function tinhToan() {
+        let result;
+        let soA = parseInt(document.getElementById("soA").value)
+        if (soA %5==0 && soA%3==0){
+            result = "CodeGym"
+        }
+        else {
+            if (soA%5==0){
+                result = "Hello"
+            }else if (soA%3==0){
+                result= "xin chao"
+            }else {
+                result = "khong chia het cho 3 va 5"
+            }
+        }
+            document.getElementById('result').innerHTML = result
+
+    }
+
+</script>
+</body>
+</html>
