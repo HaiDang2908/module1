@@ -7,6 +7,8 @@
 <body>
 <input type="text" id="soA">
 <button onclick="tinhToan()">Click</button>
+<button onclick="switchCase()">switch case</button>
+
 <p id="result"></p>
 <script>
     function tinhToan() {
@@ -26,6 +28,34 @@
         }
             document.getElementById('result').innerHTML = result
 
+    }
+
+    function switchCase(){
+
+        let a = parseInt(document.getElementById("soA").value)
+        let result
+        switch (a%3){
+            case 1 : {
+                result = "du 1"
+                break
+            }
+            case 2 : {
+                result = "du 2"
+                break
+            }
+            case 3 : {
+                result = "du 3"
+                break
+            }
+            case 4 : {
+                result = "du 4"
+                break
+            }
+            default : {
+                result = "khong du 1 ,2,3,4"
+            }
+        }
+        document.getElementById('result').innerHTML = result
     }
 
 </script>
