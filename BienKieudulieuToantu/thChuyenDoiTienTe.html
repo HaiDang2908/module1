@@ -5,44 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-  <table>
+
+<table>
     <tr>
-      <td><h2>Amount</h2></td>
-        <td><h2>From Currency</h2></td>
-        <td><h2>To Currency</h2></td>
+        <td>Amount</td>
+        <td>From</td>
+        <td>To</td>
+        <td></td>
     </tr>
-      <tr>
-          <td><input type="number" id="input"></td>
-          <td>
-              <select>
-                  <option value="VietNam">VietNam</option>
-                  <option value="My">My</option>
-              </select>
-          </td>
-          <td>
-              <select>
-                  <option value="USD">USD</option>
-                  <option value="VND">VND</option>
-              </select>
-          </td>
-          <td>
-              <button style="background-color: blueviolet;color: aliceblue" onclick="Convert()">Convert</button>
-          </td>
-      </tr>
-  </table>
-<b id="result"></b>
-</form>
+    <tr>
+        <td><input type="text" id="money"></td>
+        <td>
+            <select id="from">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td><button onclick="doiTien()">Convert</button></td>
+    </tr>
+</table>
+<p id="result"></p>
+
 <script>
-    function doiTien() {
-        let input = document.getElementById("input").value
-
-
-
-
-
-
-
+        function doiTien() {
+            let money = parseFloat(document.getElementById("money").value)
+            let from = parseFloat(document.getElementById("from").value)
+            let to = parseFloat(document.getElementById("to").value)
+            let moneyChange = money * to / from
+            document.getElementById("result").innerHTML = "Result: " + moneyChange
 
     }
 </script>
