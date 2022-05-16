@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Enter keyword</h3>
+<input type="text" id="word">
+<button onclick="translatet()">Translate</button>
+
+<p id="result"></p>
+
+
+  <script>
+      function translatet() {
+          let eng = ["Apple","Lemon","Orange","Mango","Banana","Tomato" ]
+          let vie = ["Táo","Chanh","Cam","Xoài","Chuối","Cà Chua" ]
+          let word = document.getElementById('word').value
+          let result = ""
+          for (let i = 0; i <eng.length ; i++) {
+              if (word==eng[i]){
+                  result = vie[i]
+                  break
+              }else {
+                  result = "Not result"
+              }
+          }
+          document.getElementById("result").innerHTML = result
+      }
+
+
+
+
+  </script>
+
+</body>
+</html>
