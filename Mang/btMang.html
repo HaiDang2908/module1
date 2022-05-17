@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    // Bài 1:
+
+    //     let myColor = ["Red","Green","White","Black"]
+    // myColor.toString()
+    // myColor.join(" + ")
+    // document.write(myColor.join("+"))
+
+
+      // Bài 2:
+
+//          let a = prompt("")
+//          let str = a.toString()
+//          let result = [str[0]]
+//
+//     for (let i = 1; i < str.length ; i++) {
+//         if ((str[i-1] %2 ===0) && (str[i] %2 ===0)) {
+//
+//           result.push("-" + str[i])
+//         }
+//         else {
+//             result.push(str[i])
+//         }
+//     }
+// document.write(result)
+
+
+       // Bài 3:
+
+
+    let str = "Abc"
+    let chuHoa = "A,B,C,D,E,F,G,H,I,K,L,L,M "
+    let chuThuong = "a,b,c,d,e,f,g,h,i,k,l,m"
+    let result = []
+
+    for (let i = 0; i < str.length; i++) {
+        if (chuHoa.indexOf(str[i]) !== -1){
+            result.push(str[i].toLowerCase())
+        }
+        else if (chuThuong.indexOf(str[i]) !== -1){
+            result.push(str[i].toUpperCase())
+        }
+        else {
+            result.push(str[i])
+        }
+    }
+
+document.write(result)
+
+
+
+</script>
+</body>
+</html>
