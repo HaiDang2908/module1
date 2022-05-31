@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMax(arr){
+        let max = arr[0];
+        for (let i=0;i<arr.length;i++){
+            if(max<arr[i]) {
+                max= arr[i];
+            }
+        }
+        return max;
+    }
+    let arr = [2,5,10,12,14,15,20]
+    let result = findMax(arr)
+    document.write("Số điểm cao nhất là:"+result);
+
+
+</script>
+</body>
+</html>
